@@ -1,18 +1,74 @@
+// TODO: name these colors properly
+const color1 = 'hsl(30, 70%, 50%)';
+const color2 = 'hsl(97, 70%, 50%)';
+const color3 = 'hsl(79, 70%, 50%)';
+const color4 = 'hsl(94, 70%, 50%)';
+const color5 = 'hsl(201, 70%, 50%)';
+const color6 = 'hsl(264, 70%, 50%)';
+
+// Genre
+// Afro House                        122.272727
+// Bass House                        125.750000
+// Big Room                          127.058824
+// Breaks                            127.250000
+// Dance / Electro Pop               122.833333
+// Deep House                        123.974359
+// Drum & Bass                       108.720280
+// Electronica                       128.000000
+// Funky / Groove / Jackin' House    124.674419
+// Future House                      125.200000
+// Garage / Bassline / Grime         132.000000
+// Hard Techno                       142.000000
+// House                             124.921569
+// Indie Dance                       121.500000
+// Melodic House & Techno            123.328947
+// Minimal / Deep Tech               127.500000
+// Nu Disco / Disco                  121.571429
+// Organic House / Downtempo         121.466667
+// Progressive House                 123.750000
+// Tech House                        126.403670
+// Techno (Peak Time / Driving)      130.358621
+// Techno (Raw / Deep / Hypnotic)    133.000000
+// Trance                            132.545455
+
+export const testBpmData = [
+  {
+    Genre: 'Afro House',
+    BPM: 86,
+    BPMColor: color1,
+  },
+  // {
+  //   Genre: 'XXX',
+  //   'hot dog': 86,
+  //   'hot dogColor': 'hsl(30, 70%, 50%)',
+  //   burger: 118,
+  //   burgerColor: 'hsl(97, 70%, 50%)',
+  //   sandwich: 8,
+  //   sandwichColor: 'hsl(79, 70%, 50%)',
+  //   kebab: 65,
+  //   kebabColor: 'hsl(94, 70%, 50%)',
+  //   fries: 23,
+  //   friesColor: 'hsl(201, 70%, 50%)',
+  //   donut: 89,
+  //   donutColor: 'hsl(264, 70%, 50%)',
+  // },
+];
+
 export const testBarData = [
   {
     country: 'AD',
     'hot dog': 86,
-    'hot dogColor': 'hsl(30, 70%, 50%)',
+    'hot dogColor': color1,
     burger: 118,
-    burgerColor: 'hsl(97, 70%, 50%)',
+    burgerColor: color2,
     sandwich: 8,
-    sandwichColor: 'hsl(79, 70%, 50%)',
+    sandwichColor: color3,
     kebab: 65,
-    kebabColor: 'hsl(94, 70%, 50%)',
+    kebabColor: color4,
     fries: 23,
-    friesColor: 'hsl(201, 70%, 50%)',
+    friesColor: color5,
     donut: 89,
-    donutColor: 'hsl(264, 70%, 50%)',
+    donutColor: color6,
   },
   {
     country: 'AE',

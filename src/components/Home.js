@@ -4,7 +4,9 @@ import { bindActionCreators } from 'redux';
 import { Typography, withStyles } from '@material-ui/core';
 
 import MyResponsiveBar from './MyResponsiveBar';
-import { testBarData } from '../util/testData';
+import MyResponsiveBarDemo from './MyResponsiveBarDemo';
+// TODO: replace this with real data from backend
+import { testBarData, testBpmData } from '../util/testData';
 
 const Home = ({}) => {
   return (
@@ -12,7 +14,9 @@ const Home = ({}) => {
       <Typography variant='h2' component='h2' align='center'>
         Beatport Analysis
       </Typography>
-      <MyResponsiveBar data={testBarData} title={'My Bar Chart 1'} />
+      <MyResponsiveBar data={testBpmData} title={'Average BPM by genre'} />
+      <div style={{ paddingBottom: 50 }}></div>
+      <MyResponsiveBarDemo data={testBarData} title={'My Bar Chart 1'} />
     </div>
   );
 };

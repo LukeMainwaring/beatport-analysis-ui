@@ -5,6 +5,12 @@ import { Typography, withStyles } from '@material-ui/core';
 // no chart will be rendered.
 
 const MyResponsiveBar = ({ data, title }) => {
+  // TODO: get this dynamically from API, structure to make the call in correct place
+  const keys = ['Afro House'];
+
+  const xLabel = 'Genre';
+  const yLabel = 'BPM';
+
   return (
     <div style={{ height: '500px' }}>
       <Typography variant='h4' component='h4' align='center'>
@@ -13,8 +19,8 @@ const MyResponsiveBar = ({ data, title }) => {
 
       <ResponsiveBar
         data={data}
-        keys={['hot dog', 'burger', 'sandwich', 'kebab', 'fries', 'donut']}
-        indexBy='country'
+        keys={keys}
+        indexBy={xLabel}
         margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
         padding={0.3}
         valueScale={{ type: 'linear' }}
@@ -60,7 +66,7 @@ const MyResponsiveBar = ({ data, title }) => {
           tickSize: 5,
           tickPadding: 5,
           tickRotation: 0,
-          legend: 'country',
+          legend: xLabel,
           legendPosition: 'middle',
           legendOffset: 32,
         }}
@@ -68,7 +74,7 @@ const MyResponsiveBar = ({ data, title }) => {
           tickSize: 5,
           tickPadding: 5,
           tickRotation: 0,
-          legend: 'food',
+          legend: yLabel,
           legendPosition: 'middle',
           legendOffset: -40,
         }}
@@ -77,7 +83,7 @@ const MyResponsiveBar = ({ data, title }) => {
         labelTextColor={{ from: 'color', modifiers: [['darker', 1.6]] }}
         legends={[
           {
-            dataFrom: 'keys',
+            dataFrom: 'indexes',
             anchor: 'bottom-right',
             direction: 'column',
             justify: false,
