@@ -3,10 +3,16 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Typography, withStyles } from '@material-ui/core';
 
-import MyResponsiveBar from './MyResponsiveBar';
-import MyResponsiveBarDemo from './MyResponsiveBarDemo';
+// import MyResponsiveBar from './charts/MyResponsiveBar';
+import MyResponsiveBarDemo from './charts/MyResponsiveBarDemo';
+import MyResponsiveBumpDemo from './charts/MyResponsiveBumpDemo';
 // TODO: replace this with real data from backend
-import { testBarData, testBpmData } from '../util/testData';
+import {
+  testBarData,
+  testBpmData,
+  testBumpData,
+  testBeatportBumpData,
+} from '../util/testData';
 
 const Home = ({}) => {
   return (
@@ -14,9 +20,15 @@ const Home = ({}) => {
       <Typography variant='h2' component='h2' align='center'>
         Beatport Analysis
       </Typography>
-      <MyResponsiveBar data={testBpmData} title={'Average BPM by genre'} />
-      <div style={{ paddingBottom: 50 }}></div>
-      <MyResponsiveBarDemo data={testBarData} title={'My Bar Chart 1'} />
+      <MyResponsiveBumpDemo
+        data={testBeatportBumpData}
+        title={'Beatport attribute over time'}
+      />
+      <div style={{ paddingBottom: 90 }}></div>
+      <MyResponsiveBumpDemo data={testBumpData} title={'Bump chart demo'} />
+      {/* <MyResponsiveBar data={testBpmData} title={'Average BPM by genre'} /> */}
+      {/* <div style={{ paddingBottom: 50 }}></div>
+      <MyResponsiveBarDemo data={testBarData} title={'My Bar Chart 1'} /> */}
     </div>
   );
 };

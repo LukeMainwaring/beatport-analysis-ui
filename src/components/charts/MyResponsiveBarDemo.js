@@ -1,15 +1,15 @@
 import { ResponsiveBar } from '@nivo/bar';
-import { Typography, withStyles } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 // make sure parent container have a defined height when using
 // responsive component, otherwise height will be 0 and
 // no chart will be rendered.
 
-const MyResponsiveBar = ({ data, title }) => {
+const MyResponsiveBarDemo = ({ data, title }) => {
   // TODO: get this dynamically from API, structure to make the call in correct place
-  const keys = ['Afro House'];
+  const keys = ['hot dog', 'burger', 'sandwich', 'kebab', 'fries', 'donut'];
 
-  const xLabel = 'Genre';
-  const yLabel = 'BPM';
+  const xLabel = 'country';
+  const yLabel = 'food';
 
   return (
     <div style={{ height: '500px' }}>
@@ -83,7 +83,7 @@ const MyResponsiveBar = ({ data, title }) => {
         labelTextColor={{ from: 'color', modifiers: [['darker', 1.6]] }}
         legends={[
           {
-            dataFrom: 'indexes',
+            dataFrom: 'keys',
             anchor: 'bottom-right',
             direction: 'column',
             justify: false,
@@ -113,4 +113,4 @@ const MyResponsiveBar = ({ data, title }) => {
   );
 };
 
-export default MyResponsiveBar;
+export default MyResponsiveBarDemo;
