@@ -1,10 +1,10 @@
 // TODO: name these colors properly
-const color1 = 'hsl(30, 70%, 50%)';
-const color2 = 'hsl(97, 70%, 50%)';
-const color3 = 'hsl(79, 70%, 50%)';
-const color4 = 'hsl(94, 70%, 50%)';
-const color5 = 'hsl(201, 70%, 50%)';
-const color6 = 'hsl(264, 70%, 50%)';
+// const color1 = 'hsl(30, 70%, 50%)';
+// const color2 = 'hsl(97, 70%, 50%)';
+// const color3 = 'hsl(79, 70%, 50%)';
+// const color4 = 'hsl(94, 70%, 50%)';
+// const color5 = 'hsl(201, 70%, 50%)';
+// const color6 = 'hsl(264, 70%, 50%)';
 
 // Genre
 // Afro House                        122.272727
@@ -31,538 +31,316 @@ const color6 = 'hsl(264, 70%, 50%)';
 // Techno (Raw / Deep / Hypnotic)    133.000000
 // Trance                            132.545455
 
-export const testBpmData = [
+export const testBeatportLineData = [
   {
-    Genre: 'Afro House',
-    BPM: 86,
-    BPMColor: color1,
-  },
-  // {
-  //   Genre: 'XXX',
-  //   'hot dog': 86,
-  //   'hot dogColor': 'hsl(30, 70%, 50%)',
-  //   burger: 118,
-  //   burgerColor: 'hsl(97, 70%, 50%)',
-  //   sandwich: 8,
-  //   sandwichColor: 'hsl(79, 70%, 50%)',
-  //   kebab: 65,
-  //   kebabColor: 'hsl(94, 70%, 50%)',
-  //   fries: 23,
-  //   friesColor: 'hsl(201, 70%, 50%)',
-  //   donut: 89,
-  //   donutColor: 'hsl(264, 70%, 50%)',
-  // },
-];
-
-export const testBarData = [
-  {
-    country: 'AD',
-    'hot dog': 86,
-    'hot dogColor': color1,
-    burger: 118,
-    burgerColor: color2,
-    sandwich: 8,
-    sandwichColor: color3,
-    kebab: 65,
-    kebabColor: color4,
-    fries: 23,
-    friesColor: color5,
-    donut: 89,
-    donutColor: color6,
-  },
-  {
-    country: 'AE',
-    'hot dog': 60,
-    'hot dogColor': 'hsl(239, 70%, 50%)',
-    burger: 75,
-    burgerColor: 'hsl(29, 70%, 50%)',
-    sandwich: 139,
-    sandwichColor: 'hsl(200, 70%, 50%)',
-    kebab: 105,
-    kebabColor: 'hsl(340, 70%, 50%)',
-    fries: 28,
-    friesColor: 'hsl(7, 70%, 50%)',
-    donut: 75,
-    donutColor: 'hsl(156, 70%, 50%)',
-  },
-  {
-    country: 'AF',
-    'hot dog': 36,
-    'hot dogColor': 'hsl(47, 70%, 50%)',
-    burger: 138,
-    burgerColor: 'hsl(76, 70%, 50%)',
-    sandwich: 119,
-    sandwichColor: 'hsl(131, 70%, 50%)',
-    kebab: 161,
-    kebabColor: 'hsl(74, 70%, 50%)',
-    fries: 45,
-    friesColor: 'hsl(355, 70%, 50%)',
-    donut: 199,
-    donutColor: 'hsl(238, 70%, 50%)',
-  },
-  {
-    country: 'AG',
-    'hot dog': 52,
-    'hot dogColor': 'hsl(353, 70%, 50%)',
-    burger: 125,
-    burgerColor: 'hsl(287, 70%, 50%)',
-    sandwich: 71,
-    sandwichColor: 'hsl(23, 70%, 50%)',
-    kebab: 156,
-    kebabColor: 'hsl(55, 70%, 50%)',
-    fries: 144,
-    friesColor: 'hsl(241, 70%, 50%)',
-    donut: 142,
-    donutColor: 'hsl(190, 70%, 50%)',
-  },
-  {
-    country: 'AI',
-    'hot dog': 25,
-    'hot dogColor': 'hsl(185, 70%, 50%)',
-    burger: 96,
-    burgerColor: 'hsl(355, 70%, 50%)',
-    sandwich: 178,
-    sandwichColor: 'hsl(287, 70%, 50%)',
-    kebab: 180,
-    kebabColor: 'hsl(90, 70%, 50%)',
-    fries: 184,
-    friesColor: 'hsl(207, 70%, 50%)',
-    donut: 172,
-    donutColor: 'hsl(186, 70%, 50%)',
-  },
-  {
-    country: 'AL',
-    'hot dog': 176,
-    'hot dogColor': 'hsl(280, 70%, 50%)',
-    burger: 189,
-    burgerColor: 'hsl(340, 70%, 50%)',
-    sandwich: 62,
-    sandwichColor: 'hsl(240, 70%, 50%)',
-    kebab: 62,
-    kebabColor: 'hsl(226, 70%, 50%)',
-    fries: 190,
-    friesColor: 'hsl(228, 70%, 50%)',
-    donut: 78,
-    donutColor: 'hsl(149, 70%, 50%)',
-  },
-  {
-    country: 'AM',
-    'hot dog': 147,
-    'hot dogColor': 'hsl(150, 70%, 50%)',
-    burger: 53,
-    burgerColor: 'hsl(27, 70%, 50%)',
-    sandwich: 97,
-    sandwichColor: 'hsl(174, 70%, 50%)',
-    kebab: 169,
-    kebabColor: 'hsl(95, 70%, 50%)',
-    fries: 140,
-    friesColor: 'hsl(347, 70%, 50%)',
-    donut: 139,
-    donutColor: 'hsl(0, 70%, 50%)',
-  },
-];
-
-export const testBumpData = [
-  {
-    id: 'Serie 1',
+    id: 'Genre 1',
     data: [
-      {
-        x: 2000,
-        y: 2,
-      },
-      {
-        x: 2001,
-        y: 10,
-      },
-      {
-        x: 2002,
-        y: 4,
-      },
-      {
-        x: 2003,
-        y: 3,
-      },
-      {
-        x: 2004,
-        y: 10,
-      },
+      { x: 'May 2020', y: 205 },
+      { x: 'June 2020', y: 160 },
+      { x: 'July 2020', y: 144 },
+      { x: 'August 2020', y: 154 },
+      { x: 'September 2020', y: 184 },
+      { x: 'October 2020', y: 120 },
+      { x: 'November 2020', y: 104 },
+      { x: 'December 2020', y: 184 },
     ],
   },
   {
-    id: 'Serie 2',
+    id: 'Genre 2',
     data: [
-      {
-        x: 2000,
-        y: 5,
-      },
-      {
-        x: 2001,
-        y: 6,
-      },
-      {
-        x: 2002,
-        y: 12,
-      },
-      {
-        x: 2003,
-        y: 2,
-      },
-      {
-        x: 2004,
-        y: 5,
-      },
+      { x: 'May 2020', y: 193 },
+      { x: 'June 2020', y: 94 },
+      { x: 'July 2020', y: 103 },
+      { x: 'August 2020', y: 185 },
+      { x: 'September 2020', y: 143 },
+      { x: 'October 2020', y: 85 },
+      { x: 'November 2020', y: 139 },
+      { x: 'December 2020', y: 153 },
     ],
   },
   {
-    id: 'Serie 3',
+    id: 'Genre 3',
     data: [
-      {
-        x: 2000,
-        y: 8,
-      },
-      {
-        x: 2001,
-        y: 3,
-      },
-      {
-        x: 2002,
-        y: 5,
-      },
-      {
-        x: 2003,
-        y: 8,
-      },
-      {
-        x: 2004,
-        y: 2,
-      },
-    ],
-  },
-  {
-    id: 'Serie 4',
-    data: [
-      {
-        x: 2000,
-        y: 6,
-      },
-      {
-        x: 2001,
-        y: 5,
-      },
-      {
-        x: 2002,
-        y: 11,
-      },
-      {
-        x: 2003,
-        y: 7,
-      },
-      {
-        x: 2004,
-        y: 1,
-      },
-    ],
-  },
-  {
-    id: 'Serie 5',
-    data: [
-      {
-        x: 2000,
-        y: 10,
-      },
-      {
-        x: 2001,
-        y: 11,
-      },
-      {
-        x: 2002,
-        y: 7,
-      },
-      {
-        x: 2003,
-        y: 6,
-      },
-      {
-        x: 2004,
-        y: 8,
-      },
-    ],
-  },
-  {
-    id: 'Serie 6',
-    data: [
-      {
-        x: 2000,
-        y: 11,
-      },
-      {
-        x: 2001,
-        y: 12,
-      },
-      {
-        x: 2002,
-        y: 1,
-      },
-      {
-        x: 2003,
-        y: 4,
-      },
-      {
-        x: 2004,
-        y: 12,
-      },
-    ],
-  },
-  {
-    id: 'Serie 7',
-    data: [
-      {
-        x: 2000,
-        y: 3,
-      },
-      {
-        x: 2001,
-        y: 7,
-      },
-      {
-        x: 2002,
-        y: 3,
-      },
-      {
-        x: 2003,
-        y: 9,
-      },
-      {
-        x: 2004,
-        y: 6,
-      },
-    ],
-  },
-  {
-    id: 'Serie 8',
-    data: [
-      {
-        x: 2000,
-        y: 1,
-      },
-      {
-        x: 2001,
-        y: 9,
-      },
-      {
-        x: 2002,
-        y: 10,
-      },
-      {
-        x: 2003,
-        y: 1,
-      },
-      {
-        x: 2004,
-        y: 3,
-      },
-    ],
-  },
-  {
-    id: 'Serie 9',
-    data: [
-      {
-        x: 2000,
-        y: 4,
-      },
-      {
-        x: 2001,
-        y: 8,
-      },
-      {
-        x: 2002,
-        y: 9,
-      },
-      {
-        x: 2003,
-        y: 5,
-      },
-      {
-        x: 2004,
-        y: 7,
-      },
-    ],
-  },
-  {
-    id: 'Serie 10',
-    data: [
-      {
-        x: 2000,
-        y: 12,
-      },
-      {
-        x: 2001,
-        y: 2,
-      },
-      {
-        x: 2002,
-        y: 6,
-      },
-      {
-        x: 2003,
-        y: 11,
-      },
-      {
-        x: 2004,
-        y: 4,
-      },
-    ],
-  },
-  {
-    id: 'Serie 11',
-    data: [
-      {
-        x: 2000,
-        y: 7,
-      },
-      {
-        x: 2001,
-        y: 1,
-      },
-      {
-        x: 2002,
-        y: 2,
-      },
-      {
-        x: 2003,
-        y: 12,
-      },
-      {
-        x: 2004,
-        y: 9,
-      },
-    ],
-  },
-  {
-    id: 'Serie 12',
-    data: [
-      {
-        x: 2000,
-        y: 9,
-      },
-      {
-        x: 2001,
-        y: 4,
-      },
-      {
-        x: 2002,
-        y: 8,
-      },
-      {
-        x: 2003,
-        y: 10,
-      },
-      {
-        x: 2004,
-        y: 11,
-      },
+      { x: 'May 2020', y: 104 },
+      { x: 'June 2020', y: 153 },
+      { x: 'July 2020', y: 122 },
+      { x: 'August 2020', y: 104 },
+      { x: 'September 2020', y: 90 },
+      { x: 'October 2020', y: 132 },
+      { x: 'November 2020', y: 165 },
+      { x: 'December 2020', y: 145 },
     ],
   },
 ];
 
-export const testBeatportBumpData = [
+export const testLineData = [
   {
-    id: 'Serie 1',
+    id: 'japan',
+    color: 'hsl(105, 70%, 50%)',
     data: [
       {
-        x: 2000,
-        y: 2,
+        x: 'plane',
+        y: 205,
       },
       {
-        x: 2001,
-        y: 10,
+        x: 'helicopter',
+        y: 160,
       },
       {
-        x: 2002,
-        y: 4,
+        x: 'boat',
+        y: 144,
       },
       {
-        x: 2003,
-        y: 3,
+        x: 'train',
+        y: 32,
       },
       {
-        x: 2004,
-        y: 10,
+        x: 'subway',
+        y: 86,
+      },
+      {
+        x: 'bus',
+        y: 281,
+      },
+      {
+        x: 'car',
+        y: 82,
+      },
+      {
+        x: 'moto',
+        y: 253,
+      },
+      {
+        x: 'bicycle',
+        y: 105,
+      },
+      {
+        x: 'horse',
+        y: 22,
+      },
+      {
+        x: 'skateboard',
+        y: 19,
+      },
+      {
+        x: 'others',
+        y: 147,
       },
     ],
   },
   {
-    id: 'Serie 2',
+    id: 'france',
+    color: 'hsl(192, 70%, 50%)',
     data: [
       {
-        x: 2000,
-        y: 5,
+        x: 'plane',
+        y: 135,
       },
       {
-        x: 2001,
-        y: 6,
+        x: 'helicopter',
+        y: 135,
       },
       {
-        x: 2002,
-        y: 12,
+        x: 'boat',
+        y: 165,
       },
       {
-        x: 2003,
-        y: 2,
+        x: 'train',
+        y: 26,
       },
       {
-        x: 2004,
-        y: 5,
+        x: 'subway',
+        y: 141,
+      },
+      {
+        x: 'bus',
+        y: 223,
+      },
+      {
+        x: 'car',
+        y: 108,
+      },
+      {
+        x: 'moto',
+        y: 292,
+      },
+      {
+        x: 'bicycle',
+        y: 106,
+      },
+      {
+        x: 'horse',
+        y: 246,
+      },
+      {
+        x: 'skateboard',
+        y: 212,
+      },
+      {
+        x: 'others',
+        y: 95,
       },
     ],
   },
   {
-    id: 'Serie 3',
+    id: 'us',
+    color: 'hsl(258, 70%, 50%)',
     data: [
       {
-        x: 2000,
-        y: 8,
+        x: 'plane',
+        y: 110,
       },
       {
-        x: 2001,
-        y: 3,
+        x: 'helicopter',
+        y: 278,
       },
       {
-        x: 2002,
-        y: 5,
+        x: 'boat',
+        y: 167,
       },
       {
-        x: 2003,
-        y: 8,
+        x: 'train',
+        y: 254,
       },
       {
-        x: 2004,
-        y: 2,
+        x: 'subway',
+        y: 246,
+      },
+      {
+        x: 'bus',
+        y: 84,
+      },
+      {
+        x: 'car',
+        y: 265,
+      },
+      {
+        x: 'moto',
+        y: 15,
+      },
+      {
+        x: 'bicycle',
+        y: 76,
+      },
+      {
+        x: 'horse',
+        y: 277,
+      },
+      {
+        x: 'skateboard',
+        y: 222,
+      },
+      {
+        x: 'others',
+        y: 188,
       },
     ],
   },
   {
-    id: 'Serie 4',
+    id: 'germany',
+    color: 'hsl(45, 70%, 50%)',
     data: [
       {
-        x: 2000,
-        y: 6,
+        x: 'plane',
+        y: 109,
       },
       {
-        x: 2001,
-        y: 5,
+        x: 'helicopter',
+        y: 22,
       },
       {
-        x: 2002,
-        y: 11,
+        x: 'boat',
+        y: 296,
       },
       {
-        x: 2003,
-        y: 7,
+        x: 'train',
+        y: 153,
       },
       {
-        x: 2004,
-        y: 1,
+        x: 'subway',
+        y: 85,
+      },
+      {
+        x: 'bus',
+        y: 265,
+      },
+      {
+        x: 'car',
+        y: 122,
+      },
+      {
+        x: 'moto',
+        y: 185,
+      },
+      {
+        x: 'bicycle',
+        y: 26,
+      },
+      {
+        x: 'horse',
+        y: 93,
+      },
+      {
+        x: 'skateboard',
+        y: 209,
+      },
+      {
+        x: 'others',
+        y: 168,
+      },
+    ],
+  },
+  {
+    id: 'norway',
+    color: 'hsl(152, 70%, 50%)',
+    data: [
+      {
+        x: 'plane',
+        y: 128,
+      },
+      {
+        x: 'helicopter',
+        y: 266,
+      },
+      {
+        x: 'boat',
+        y: 215,
+      },
+      {
+        x: 'train',
+        y: 300,
+      },
+      {
+        x: 'subway',
+        y: 20,
+      },
+      {
+        x: 'bus',
+        y: 195,
+      },
+      {
+        x: 'car',
+        y: 68,
+      },
+      {
+        x: 'moto',
+        y: 120,
+      },
+      {
+        x: 'bicycle',
+        y: 62,
+      },
+      {
+        x: 'horse',
+        y: 22,
+      },
+      {
+        x: 'skateboard',
+        y: 134,
+      },
+      {
+        x: 'others',
+        y: 96,
       },
     ],
   },
